@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class RockClimbsKotlinApplication
 
 fun main(args: Array<String>) {
-	runApplication<RockClimbsKotlinApplication>(*args)
+    runApplication<RockClimbsKotlinApplication>(*args)
 }
