@@ -9,6 +9,7 @@ import jakarta.persistence.Table
 import org.springframework.security.crypto.bcrypt.BCrypt
 
 class user {
+
     @Entity
     //TODO: WHY TF DOES THIS CHRASH THE SERVER?! (table name = "user")
 @Table
