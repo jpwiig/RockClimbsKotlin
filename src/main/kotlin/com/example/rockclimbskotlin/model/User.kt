@@ -1,4 +1,4 @@
-package com.example.rockclimbskotlin
+package com.example.rockclimbskotlin.model
 
 import com.google.crypto.tink.config.TinkConfig
 import com.google.crypto.tink.proto.Tink
@@ -10,6 +10,10 @@ import org.springframework.security.crypto.bcrypt.BCrypt
 
 class user {
 
+    val id : Int = 0
+    val name : String = ""
+    val email : String = ""
+    val password : String = ""
     @Entity
     //TODO: WHY TF DOES THIS CHRASH THE SERVER?! (table name = "user")
 @Table
