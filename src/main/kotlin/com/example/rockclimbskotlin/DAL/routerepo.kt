@@ -4,6 +4,7 @@ import com.example.rockclimbskotlin.model.route
 import jakarta.servlet.http.*
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.stereotype.Repository
+import java.io.IOException
 
 @Repository
 
@@ -26,6 +27,8 @@ abstract class routerepo : JpaRepository<route, Int> {
                 //request.sendError(INTERNAL_SERVER_ERROR.value(), "could not find route") TODO: kotlify this please
             }
         }
-        throw Exception("could not find route")
+        throw IOException("could not find route")
     }
+
+
 }
